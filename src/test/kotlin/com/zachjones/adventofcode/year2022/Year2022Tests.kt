@@ -26,9 +26,10 @@ class Year2022Tests {
         println("Challenge $challenge finished successfully")
     }
 
+
     data class Solution(val part1: String, val part2: String)
 
-    fun arguments(): Stream<Arguments> {
+    private fun arguments(): Stream<Arguments> {
         return Stream.of(
             Arguments.of(
                 Day1(isExample = true), Solution("24000", "45000")

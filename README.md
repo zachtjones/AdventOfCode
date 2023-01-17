@@ -18,17 +18,20 @@ with the example smaller problems they give.
 If you're new to the challenge, you may notice that the input's for the day are unique to each person,
 so everyone will have slightly different answers.
 
+## Setup on your machine
+You should be able to import this as a standard gradle library into your IDE of choice (Intellij, etc.)
+
 ## Usage
 
 To invoke a single day's challenges, just run the main method in that class. It will print out the solutions.
 
-(still working on this) To run all days, you can run the unit tests using maven.
+To run all days, you can run the tests using gradle.
 ```shell
-mvn clean test
+gradle test -i
 ```
 
 Note that some days can take up to a minute, since some of these are very large input sets and computationally
-complicated.
+complicated, so these are run in parallel to speed up execution.
 
 ## Contributing
 Please don't contribute code to this repo, however feel free to read/copy this code to help your understanding
