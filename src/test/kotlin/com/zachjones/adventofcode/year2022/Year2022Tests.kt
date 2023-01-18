@@ -42,7 +42,8 @@ class Year2022Tests {
             ),
             Arguments.of(
                 Day2(isExample = false), Solution("12458", "12683")
-            )
+            ),
+
         )
     }
 }
