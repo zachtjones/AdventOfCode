@@ -18,3 +18,9 @@ class Day1(isExample: Boolean): BaseChallenge2022(day = 1, isExample) {
     }
 
 }
+
+fun main() {
+    val day = Day1(isExample = false)
+    println("Part 1: ${day.solvePart1()}")
+    println("Part 2: ${day.solvePart2()}")
+}

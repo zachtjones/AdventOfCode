@@ -36,6 +36,12 @@ class Year2022Tests {
             ),
             Arguments.of(
                 Day1(isExample = false), Solution("73211", "213958")
+            ),
+            Arguments.of(
+                Day2(isExample = true), Solution("15", "12")
+            ),
+            Arguments.of(
+                Day2(isExample = false), Solution("12458", "12683")
             )
         )
     }
