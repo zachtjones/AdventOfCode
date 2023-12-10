@@ -36,7 +36,14 @@ class Year2023Tests {
                 Day1(isExample = false),
                 Solution("55172", ""), // TODO - there is a problem here
             ),
-
+            Arguments.of(
+                Day2(isExample = true),
+                Solution("8", "2286"),
+            ),
+            Arguments.of(
+                Day2(isExample = false),
+                Solution("2505", "70265"),
+            ),
         )
     }
 }
