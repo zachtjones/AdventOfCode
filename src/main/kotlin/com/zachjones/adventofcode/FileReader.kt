@@ -1,17 +1,17 @@
-package com.zachjones.adventofcode.year2022
+package com.zachjones.adventofcode
 
-object FileReader {
+class FileReader(private val year: Int) {
     /**
      * Reads the text file for the day, returning it as a giant string.
      * @param example if you wish to read the example file instead
      */
     fun readFile(day: Int, example: Boolean = false): String {
         val name = if (example) {
-            "2022/input-example-$day.txt"
+            "$year/input-example-$day.txt"
         } else {
-            "2022/input-$day.txt"
+            "$year/input-$day.txt"
         }
-        return  this::class.java.classLoader.getResource(name)?.readText()
+        return this::class.java.classLoader.getResource(name)?.readText()
             ?: throw IllegalArgumentException("File $name does not exist in the resources")
     }
 }

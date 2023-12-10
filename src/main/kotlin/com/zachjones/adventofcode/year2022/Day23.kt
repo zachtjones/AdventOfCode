@@ -4,7 +4,7 @@ import com.zachjones.adventofcode.Point2
 import com.zachjones.adventofcode.plus
 
 fun main() {
-    val input = FileReader.readFile(day = 23, example = false).split('\n')
+    val input = FileReader2022.readFile(day = 23, example = false).split('\n')
 
     val elves = hashSetOf<Point2>()
     input.forEachIndexed { rowIndex, rowInput ->

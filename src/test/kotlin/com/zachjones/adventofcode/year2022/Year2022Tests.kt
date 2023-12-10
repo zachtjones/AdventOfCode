@@ -1,5 +1,6 @@
 package com.zachjones.adventofcode.year2022
 
+import com.zachjones.adventofcode.Solution
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.api.parallel.Execution
@@ -24,8 +25,6 @@ class Year2022Tests {
         Solution(answerPart1, answerPart2) shouldBe expected
         println("Challenge $challenge finished successfully")
     }
-
-    data class Solution(val part1: String, val part2: String)
 
     private fun arguments(): Stream<Arguments> {
         return Stream.of(

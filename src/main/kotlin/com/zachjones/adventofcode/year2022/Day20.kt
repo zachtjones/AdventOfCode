@@ -3,7 +3,7 @@ package com.zachjones.adventofcode.year2022
 const val DECRYPTION_KEY: Long = 811589153
 
 fun main() {
-    val content = FileReader.readFile(day = 20, example = false)
+    val content = FileReader2022.readFile(day = 20, example = false)
     val initialNumbers = content.split('\n').map { it.toLong() }
 
     // observations

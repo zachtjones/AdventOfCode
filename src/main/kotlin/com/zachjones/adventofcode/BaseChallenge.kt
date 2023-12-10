@@ -1,13 +1,12 @@
-package com.zachjones.adventofcode.year2022
+package com.zachjones.adventofcode
 
-abstract class BaseChallenge2022(private val day: Int, private val isExample: Boolean) {
+abstract class BaseChallenge(private val day: Int, private val isExample: Boolean) {
 
     /**
      * The loaded input's content, based on the day and example/not.
      * This will contain the '\n' characters for newlines
      */
-    val inputContent: String = FileReader.readFile(day, isExample)
-
+    abstract val inputContent: String
 
     /**
      * Solves the puzzle for part 1, given the input

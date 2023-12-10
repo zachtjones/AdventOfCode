@@ -7,7 +7,7 @@ import kotlin.collections.ArrayList
 const val TUNNEL_WIDTH = 7
 
 fun main() {
-    val input = FileReader.readFile(day = 17, example = false)
+    val input = FileReader2022.readFile(day = 17, example = false)
     val simulation = Simulation(input)
     simulation.simulate(2022)
     val height = simulation.totalHeight()

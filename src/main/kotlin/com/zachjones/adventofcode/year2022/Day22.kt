@@ -5,7 +5,7 @@ import com.zachjones.adventofcode.Point2
 fun main() {
     val isExample = true
 
-    val input = FileReader.readFile(day = 22, example = isExample)
+    val input = FileReader2022.readFile(day = 22, example = isExample)
     val board = BoardPart1(input)
     println("Part 1: The score is ${board.simulate()}")
 

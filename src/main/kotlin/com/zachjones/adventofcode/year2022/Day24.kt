@@ -5,7 +5,7 @@ import com.zachjones.adventofcode.Point2
 import com.zachjones.adventofcode.plus
 
 fun main() {
-    val input = FileReader.readFile(day = 24, example = true)
+    val input = FileReader2022.readFile(day = 24, example = true)
     val blizzards = Blizzards(input)
     blizzards.solve()
 }

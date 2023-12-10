@@ -3,7 +3,7 @@ package com.zachjones.adventofcode.year2022
 import java.util.TreeSet
 
 fun main() {
-    val input = FileReader.readFile(day = 18, example = false)
+    val input = FileReader2022.readFile(day = 18, example = false)
     val cubes = input.split('\n').map { line ->
         val split = line.split(',').map { it.toInt() }
         Cube(split[0], split[1], split[2])

@@ -5,7 +5,7 @@ import java.util.*
 import kotlin.collections.HashSet
 
 fun main() {
-    val lines = FileReader.readFile(day = 19, example = false).split('\n')
+    val lines = FileReader2022.readFile(day = 19, example = false).split('\n')
 
     val blueprints = lines.map { Blueprint(it) }
 

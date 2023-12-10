@@ -1,7 +1,7 @@
 package com.zachjones.adventofcode.year2022
 
 fun main() {
-    val content = FileReader.readFile(day = 21, example = true).split('\n')
+    val content = FileReader2022.readFile(day = 21, example = true).split('\n')
     val monkeysPart1: Map<String, TalkingMonkey> = content.map { line ->
         val split = line.split(": ")
         val name = split[0]

@@ -34,7 +34,7 @@ fun SmartBitSet.set(position: Int): SmartBitSet {
 // Note: Part 2 does not work, I get the wrong answer
 
 fun main() {
-    val input = FileReader.readFile(day = 16, example = false)
+    val input = FileReader2022.readFile(day = 16, example = false)
     val valves = input.split('\n')
         .mapIndexed { index, it -> Valve(index, it) }.associateBy { it.index }
 
