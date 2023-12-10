@@ -30,11 +30,11 @@ class Year2023Tests {
         return Stream.of(
             Arguments.of(
                 Day1(isExample = true),
-                Solution("", ""),
+                Solution("142", "281"),
             ),
             Arguments.of(
                 Day1(isExample = false),
-                Solution("", ""),
+                Solution("55172", ""), // TODO - there is a problem here
             ),
 
         )
