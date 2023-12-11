@@ -44,11 +44,11 @@ class Year2023Tests {
             ),
             Arguments.of(
                 Day3(isExample = true),
-                Solution("4361", ""),
+                Solution("4361", "467835"),
             ),
             Arguments.of(
                 Day3(isExample = false),
-                Solution("527369", ""),
+                Solution("527369", "73074886"),
             ),
         )
     }
