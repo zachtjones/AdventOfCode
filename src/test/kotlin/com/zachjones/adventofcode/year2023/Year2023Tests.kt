@@ -3,8 +3,6 @@ package com.zachjones.adventofcode.year2023
 import com.zachjones.adventofcode.Solution
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.TestInstance
-import org.junit.jupiter.api.parallel.Execution
-import org.junit.jupiter.api.parallel.ExecutionMode
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource
@@ -16,9 +14,9 @@ class Year2023Tests {
     // I want to run each parameter on a separate thread to speed up execution
     // since some of these take a while to get the answer
 
+    // @Execution(ExecutionMode.CONCURRENT)
     @ParameterizedTest
     @MethodSource("arguments")
-    @Execution(ExecutionMode.CONCURRENT)
     fun scenarios(challenge: BaseChallenge2023, expected: Solution) {
         val answerPart1 = challenge.solvePart1()
         val answerPart2 = challenge.solvePart2()
@@ -43,6 +41,14 @@ class Year2023Tests {
             Arguments.of(
                 Day2(isExample = false),
                 Solution("2505", "70265"),
+            ),
+            Arguments.of(
+                Day3(isExample = true),
+                Solution("4361", ""),
+            ),
+            Arguments.of(
+                Day3(isExample = false),
+                Solution("527369", ""),
             ),
         )
     }
